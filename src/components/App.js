@@ -29,7 +29,6 @@ function App() {
     return (
         <div className="App">
             <Nav />
-            <HogForm addHog={addHog} />
             <SortSelector option={option} onSortChange={handleSortChange} />
             {sortedHogs.map((hog) => (
                 <Tile
@@ -42,6 +41,8 @@ function App() {
                     image={hog.image}
                 />
             ))}
+
+            <HogForm addHog={addHog} />
         </div>
     );
 }

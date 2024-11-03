@@ -145,6 +145,28 @@ ul {
   margin-top: 20px;
 }
 
+.sort-options label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4a4a4a;
+}
+
+.sort-options select {
+  padding: 8px;
+  border: 1px solid #d1d5db; 
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-size: 14px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.sort-options select:focus {
+  border-color: #ECB3B2;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(240, 168, 207, 0.2);
+}
+
 
 @keyframes App-logo-spin {
   from {

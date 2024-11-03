@@ -54,7 +54,7 @@ function Tile({ name, specialty, greased, weight, highest, image }) {
 const buttonStyles = {
     padding: '10px',
     fontSize: '16px',
-    backgroundColor: 'pink',
+    backgroundColor: '#ECB3B2',
     color: 'white',
     border: 'none',
     borderRadius: '5px',

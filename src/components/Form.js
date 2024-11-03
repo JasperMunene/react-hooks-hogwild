@@ -83,20 +83,13 @@ function HogForm({ addHog }) {
             </div>
             <div style={fieldStyles}>
                 <label>Highest Medal Achieved</label>
-                <select
+                <input
                     name="highestMedal"
                     value={formData.highestMedal}
                     onChange={handleChange}
                     required
                 >
-                    <option value="">Select medal</option>
-                    <option value="wood">Wood</option>
-                    <option value="bronze">Bronze</option>
-                    <option value="silver">Silver</option>
-                    <option value="gold">Gold</option>
-                    <option value="platinum">Platinum</option>
-                    <option value="diamond">Diamond</option>
-                </select>
+                </input>
             </div>
             <div style={fieldStyles}>
                 <label>Image URL</label>
@@ -117,27 +110,29 @@ const formStyles = {
     display: 'flex',
     flexDirection: 'column',
     gap: '10px',
-    maxWidth: '400px',
+    maxWidth: '600px',
     margin: '0 auto',
     padding: '20px',
     border: '1px solid #ddd',
     borderRadius: '8px',
-    backgroundColor: '#f9f9f9'
+    backgroundColor: '#f9f9f9',
+    marginTop: '50px'
 };
 
 const fieldStyles = {
     display: 'flex',
     flexDirection: 'column',
-    gap: '4px'
+    gap: '5px'
 };
 
 const buttonStyles = {
     padding: '10px',
-    fontSize: '16px',
-    backgroundColor: 'pink',
+    fontSize: '20px',
+    backgroundColor: '#ECB3B2',
     color: 'white',
+    fontWeigth: '400',
     border: 'none',
-    borderRadius: '5px',
+    borderRadius: '10px',
     cursor: 'pointer'
 };
 
