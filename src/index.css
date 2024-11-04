@@ -167,8 +167,8 @@ ul {
   box-shadow: 0 0 0 3px rgba(240, 168, 207, 0.2);
 }
 
-.flex {
-  display: flex;
+.filter-options {
+  margin-bottom: 25px;
 }
 
 
