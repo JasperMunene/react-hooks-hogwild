@@ -18,36 +18,35 @@ function Tile({ name, specialty, greased, weight, highest, image }) {
     if (hideTile) return null;
 
     return (
-        <div className="ui centered grid container">
-            <div className="ui eight wide column">
-                <div className="ui fluid card pigTile">
-                    <div className="image">
-                        <img 
-                            src={image}
-                            alt={name}
-                        />
-                    </div>
-                    <div className="content">
-                        <h3 className="header headerText" onClick={handleShowDetails} style={{ cursor: 'pointer' }}>{name}</h3>
-                    </div>
-                    {showDetails && (
-                        <div className="content">
-                            <div className="meta">
-                                <span>{specialty}</span>
-                            </div>
-                            <div className="description">
-                                <p className=''>Greased: <strong>{greased ? "Yes" : "No"}</strong></p>
-                                <p>Weight: <strong>{weight}</strong></p>
-                                <p className='achievementText'>Highest medal achieved: <strong>{highest}</strong></p>
-                            </div>
-                        </div>
-                    )}
-                    <button onClick={handleHideTile} style={buttonStyles}>
-                        Hide Tile
-                    </button>
+        <div className="ui four wide column">
+            <div className="ui fluid card pigTile">
+                <div className="image">
+                    <img
+                        src={image}
+                        alt={name}
+                    />
                 </div>
+                <div className="content">
+                    <h3 className="header headerText" onClick={handleShowDetails} style={{ cursor: 'pointer' }}>{name}</h3>
+                </div>
+                {showDetails && (
+                    <div className="content">
+                        <div className="meta">
+                            <span>{specialty}</span>
+                        </div>
+                        <div className="description">
+                            <p className=''>Greased: <strong>{greased ? "Yes" : "No"}</strong></p>
+                            <p>Weight: <strong>{weight}</strong></p>
+                            <p className='achievementText'>Highest medal achieved: <strong>{highest}</strong></p>
+                        </div>
+                    </div>
+                )}
+                <button onClick={handleHideTile} style={buttonStyles}>
+                    Hide Tile
+                </button>
             </div>
         </div>
+
     );
 }
 

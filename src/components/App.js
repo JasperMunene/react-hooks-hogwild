@@ -30,6 +30,7 @@ function App() {
         <div className="App">
             <Nav />
             <SortSelector option={option} onSortChange={handleSortChange} />
+            <div className="ui grid container">
             {sortedHogs.map((hog) => (
                 <Tile
                     key={hog.name}
@@ -41,6 +42,8 @@ function App() {
                     image={hog.image}
                 />
             ))}
+            </div>
+            
 
             <HogForm addHog={addHog} />
         </div>
